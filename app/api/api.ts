@@ -7,7 +7,7 @@ export interface Ipost {
 
 export const postsApi = createApi({
     reducerPath: 'PostAPI',
-    baseQuery: fetchBaseQuery({baseUrl: 'http://localhost:3001/'}),
+    baseQuery: fetchBaseQuery({baseUrl: 'https://test-server-remi.herokuapp.com/'}),
     tagTypes: ['Post'],
     endpoints: (builder) => ({
         getPosts: builder.query<Ipost[], any>({
